@@ -12,7 +12,7 @@ const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 // Add the domain you will be minting
 const tld = '.nephalem';
-const CONTRACT_ADDRESS = '0x2336A5bdbF310fcf2A84B16F2102c862954329FFc';
+const CONTRACT_ADDRESS = '0x422B21dc9e4c3a71CC60a7AA358A861AE7A1aa04';
 
 const App = () => {
     const [currentAccount, setCurrentAccount] = useState('');
@@ -260,10 +260,20 @@ const App = () => {
     // Render methods
     const renderNotConnectedContainer = () => (
         <div className="connect-wallet-container">
-            <img
-                src="https://media.giphy.com/media/3ohhwytHcusSCXXOUg/giphy.gif"
-                alt="Ninja donut gif"
-            />
+            <iframe
+                src="https://giphy.com/embed/113GDSpZkDOqac"
+                width="480"
+                height="265"
+                frameBorder="0"
+                className="giphy-embed"
+                title="diablo"
+                allowFullScreen
+            ></iframe>
+            <p>
+                <a href="https://giphy.com/gifs/diablo-113GDSpZkDOqac">
+                    via GIPHY
+                </a>
+            </p>
             {/* Call the connectWallet function we just wrote when the button is clicked */}
             <button
                 onClick={connectWallet}
@@ -312,7 +322,7 @@ const App = () => {
                         >
                             Set record
                         </button>
-                        // This will let us get out of editing mode by setting
+                        //This will let us get out of editing mode by setting
                         editing to false
                         <button
                             className="cta-button mint-button"
